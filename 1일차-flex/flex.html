@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .con_wrap{
+            width: 600px;
+            height: 500px;
+            border: 5px solid black;
+            display: flex;
+            /* =>flex적용 하고자하는 부모 엘리먼트에 넣기
+            =>적용하면 자식이 자동으로 왼쪽 정렬됨 */
+
+            /* justify-content: flex-start; */
+            /* =>기본값으로 좌우 왼쪽 정렬 */
+
+            /* justify-content: flex-end; */
+            /* =>좌우 오른쪽 정렬 */
+
+            /* justify-content: center; */
+            /* =>좌우 가운데 정렬 */
+
+            /* justify-content: space-between;
+            =>처음, 끝 엘리먼트를 부모 엘리먼트 끝으로 정렬하고
+            가운데 있는 형제 엘리먼트의 간격을 동일하게 나눠가짐 */
+
+            /* justify-content: space-around; */
+            /* =>형제 엘리먼트의 양옆 간격을 동일하게 나눠가짐 */
+
+            /* justify-content: space-evenly; */
+            /* =>형제 엘리먼트의 간격을 동일하게 나눠가짐 */
+
+            /* align-items: flex-start;
+            =>기본값으로 위쪽으로 정렬됨 */
+
+            /* align-items: flex-end;
+            =>상하 정렬 중 아래 쪽으로 정렬됨 */
+
+            /* align-items: center; */
+            /* =>상하 정렬 중 가운데 정렬 */
+
+            flex-direction: column;
+            /* =>flex축 방향을 변경  */
+            justify-content: space-between;
+
+            align-items: center;
+        }
+
+        .con{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            border: 3px solid red;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="con_wrap">
+        <div class="con">1</div>
+        <div class="con">2</div>
+        <div class="con">3</div>
+        <div class="con">4</div>
+    </div>
+    
+</body>
+</html>

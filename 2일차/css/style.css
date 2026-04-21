@@ -1,0 +1,58 @@
+@import url(reset.css);
+@import url(common.css);
+/* =>css에서 다른 css파일을 연결할 때 사용 */
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.header_container{
+    display: flex;
+    align-items: center;
+}
+
+.header_left{
+    padding: 20px 40px;
+    background-color: #333;
+    border-bottom-right-radius: 30px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.menu_btn{
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.bar{
+    width: 80px;
+    height: 2px;
+    background-color: white;
+}
+
+.bar:nth-child(1){
+    width: 50%;
+}
+/* header end */
+
+.section_1{
+    height: 100vh;
+    background: url(https://meat-prod-bucket.s3.ap-northeast-2.amazonaws.com/_media/RS_HERO_WEB_20261440x711_KR.webp) no-repeat center / cover;
+    margin-top: 78px;
+}
+/* section_1 end */
