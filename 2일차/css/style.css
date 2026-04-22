@@ -8,6 +8,7 @@ header{
     top: 0;
     left: 0;
     background-color: #fff;
+    z-index: 10;
 }
 
 .header_container{
@@ -56,3 +57,310 @@ header{
     margin-top: 78px;
 }
 /* section_1 end */
+
+.section_2{
+    background-color: #fdf8f5;
+}
+
+.con_wrap_2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.con_2{
+    width: 31.5%;
+    position: relative;
+}
+
+.con_2 h3{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.hover_con_2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 505px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange_cirlce{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: #ff6400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.con_2:hover .hover_con_2{
+    display: flex;
+}
+/* section_2 end */
+
+.section_3{
+    display: flex;
+    height: 1200px;
+    align-items: center;
+}
+
+.container_3{
+    width: 50%;
+}
+
+.container_3:nth-child(1){
+    padding: 150px 0;
+}
+
+.con_3{
+    width: 500px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.img_wrap_3{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.con_3 h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 25px 0 15px 0;
+}
+
+.con_3 p{
+    font-size: 15px;
+    color: #808080;
+}
+
+.read_more_btn{
+    width: 130px;
+    height: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 100px auto 0 auto;
+}
+
+.read_more_btn span{
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.line_circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff6400;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.read_more_btn:hover{
+    background-color: #ff6400;
+}
+.read_more_btn:hover a{
+    color: white;
+}
+
+.read_more_btn:hover .line_circle{
+    display: none;
+}
+
+.container_3:nth-child(2){
+    height: 100%;
+    background: url(https://meat-prod-bucket.s3.ap-northeast-2.amazonaws.com/_media/buldak_right_01.webp) no-repeat center / cover;
+}
+/* section_3 end */
+
+
+.section_4{
+    background-color: #fdf8f5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_4:nth-child(1){
+    width: 35%;
+    border-top: 4px solid #f7decb;
+    padding-top: 30px;
+}
+
+.container_4:nth-child(2){
+    width: 61%;
+}
+
+.con_wrap_4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.con_4{
+    width: 48%;
+    padding: 30px 0 50px 0;
+    position: relative;
+}
+
+.progress_wrap{
+    width: 100%;
+    height: 4px;
+    background-color: #f7decb;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress_wrap .bar{
+    width: 0%;
+    height: 100%;
+    background-color: #ff6400;
+    transition-duration: 0.5s;
+}
+
+.con_4:hover .bar{
+    width: 100%;
+}
+
+.con_4 h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff6400;
+}
+
+.con_title_4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con_title_4 h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 15px 0;
+}
+
+.view_more_btn{
+    display: flex;
+    align-items: center;
+}
+
+.view_more_btn span{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.arrow{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #808080;
+}
+
+.con_4:hover .arrow{
+    background-color: #ff6400;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.con_4 p{
+    color: #afafaf;
+    line-height: 22px;
+}
+/* section_4 end */
+
+.section_5{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* =>자식의 가로 크기에 맞춰서 옆으로 정렬하다가, 
+    부모의 크기를 벗어날땐 자동으로 아래로 정렬됨  */
+}
+
+.con_5{
+    width: 25%;
+    height: 50%;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.con_5:nth-child(1){
+    background-image: url(https://www.roundsquare.ai/_next/image?url=https%3A%2F%2Fmeat-prod-bucket.s3.ap-northeast-2.amazonaws.com%2F_media%2FJohnMaat_on_mobile_home_1.webp&w=1920&q=75);
+}
+.con_5:nth-child(2){
+    background-image: url(https://www.roundsquare.ai/_next/image?url=https%3A%2F%2Fmeat-prod-bucket.s3.ap-northeast-2.amazonaws.com%2F_media%2FJohnMaat_on_mobile_home_1.webp&w=1920&q=75);
+}
+.con_5:nth-child(3){
+    background-image: url(https://www.roundsquare.ai/_next/image?url=https%3A%2F%2Fmeat-prod-bucket.s3.ap-northeast-2.amazonaws.com%2F_media%2FJohnMaat_on_mobile_home_1.webp&w=1920&q=75);
+}
+.con_5:nth-child(4){
+    background-image: url(https://www.roundsquare.ai/_next/image?url=https%3A%2F%2Fmeat-prod-bucket.s3.ap-northeast-2.amazonaws.com%2F_media%2FJohnMaat_on_mobile_home_1.webp&w=1920&q=75);
+}
+.con_5:nth-child(5){
+    background-image: url(https://www.roundsquare.ai/_next/image?url=https%3A%2F%2Fmeat-prod-bucket.s3.ap-northeast-2.amazonaws.com%2F_media%2FJohnMaat_on_mobile_home_1.webp&w=1920&q=75);
+}
+.con_5:nth-child(6){
+    background-image: url(https://www.roundsquare.ai/_next/image?url=https%3A%2F%2Fmeat-prod-bucket.s3.ap-northeast-2.amazonaws.com%2F_media%2FJohnMaat_on_mobile_home_1.webp&w=1920&q=75);
+}
+.con_5:nth-child(7){
+    background-image: url(https://www.roundsquare.ai/_next/image?url=https%3A%2F%2Fmeat-prod-bucket.s3.ap-northeast-2.amazonaws.com%2F_media%2FJohnMaat_on_mobile_home_1.webp&w=1920&q=75);
+}
+.con_5:nth-child(8){
+    background-image: url(https://www.roundsquare.ai/_next/image?url=https%3A%2F%2Fmeat-prod-bucket.s3.ap-northeast-2.amazonaws.com%2F_media%2FJohnMaat_on_mobile_home_1.webp&w=1920&q=75);
+}
+
+.orange_wrap{
+    height: 100%;
+    background-color: #ff6400;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.orange_item{
+    width: 90%;
+    height: 90%;
+    background-color: #ff924c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orange_item h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.orange_item p{
+    width: 250px;
+    text-align: center;
+    line-height: 22px;
+    color: #555;
+}
+
+.con_5:hover .orange_wrap{
+    display: flex;
+}

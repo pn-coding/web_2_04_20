@@ -1,0 +1,25 @@
+.section_2,
+.section_4{
+    padding: 150px;
+}
+
+.section_3{
+    padding-left: 150px;
+}
+
+
+.title_wrap{
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.title_wrap h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.title_wrap p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
