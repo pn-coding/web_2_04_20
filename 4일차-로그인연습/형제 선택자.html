@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* *인접 형제 선택자 
+        =>기준 선택자 바로 뒤에 있는 형제 엘리먼트를 선택함
+        => + 기호를 사용함 */
+
+        .first_bro + h3{
+            color: blue;
+        }
+
+        /* *형제 선택자
+        =>기준 선택자 뒤에 있는 형제 엘리먼트 선택
+        => ~ 기호 사용  */
+
+        .first_bro ~ .last_bro{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 class="first_bro">첫번째 형제</h1>
+    <h3>두번째 형제</h3>
+    <h2>세번째 형제</h2>
+    <h2 class="last_bro">네번째 형제</h2>
+
+</body>
+</html>
+

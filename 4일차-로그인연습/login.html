@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .wrap{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #adadad;
+            padding: 150px 50px;
+            width: 500px;
+            border-radius: 20px;
+        }
+
+        h1{
+            margin-bottom: 40px;
+        }
+
+        input{
+            all: unset;
+            height: 45px;
+            border-radius: 10px;
+            border: 1px solid #adadad;
+            padding: 0 10px;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+        }
+
+        button{
+            all: unset;
+            box-sizing: border-box;
+            height: 45px;
+            background-color: rgb(122, 201, 4);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 900;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            opacity: 0.8;
+        }
+
+        .seper_wrap{
+            display: flex;
+            margin: 40px 0;
+            align-items: center;
+            justify-content: space-between;
+            color: #adadad;
+        }
+
+        .line{
+            width: 40%;
+            height: 1px;
+            background-color: #adadad;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="wrap">
+
+        <form>
+
+            <h1>LOGIN</h1>
+
+            <input type="text" placeholder="아이디">
+            <input type="password" placeholder="비밀번호">
+
+            <button>로그인</button>
+
+            <div class="seper_wrap">
+                <div class="line"></div>
+                <span>OR</span>
+                <div class="line"></div>
+            </div>
+
+            <div class="signup_link">
+                아이디가 없으신가요? 
+                <a href="signup.html">회원가입</a>
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
