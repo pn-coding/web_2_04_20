@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .btn_wrap{
+            width: 150px;
+            height: 60px;
+            background-color: gray;
+            margin: 100px auto;
+            border-radius: 50px;
+            position: relative;
+            transition: 0.5s;
+            display: block;
+            cursor: pointer;
+        }
+        
+        .btn{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            transition: 0.5s;
+        }
+
+        #check{
+            display: none;
+        }
+
+        #check:checked ~ .btn_wrap{
+            background-color: green;
+        }
+
+        #check:checked ~ .btn_wrap .btn{
+            left: 95px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <input type="checkbox" id="check">
+
+    <label for="check" class="btn_wrap">
+        <div class="btn"></div>
+    </label>
+
+</body>
+</html>
+
+
+
+
