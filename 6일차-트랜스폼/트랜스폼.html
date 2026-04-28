@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            margin: 100px auto;
+            /* transform: translate(100px, 100px); */
+            /* =>엘리먼트 좌측 상단기준으로 이동시킴
+            =>relavtive와 비슷한 개념으로 이동됨  */
+
+
+            /* transform: scale(2); */
+            /* transform: scaleX(2);
+            =>엘리먼트의 크기를 배율로 조절함 
+            =>기본값이 1 즉, 1배 */
+
+            /* transform: rotateZ(45deg);
+            =>엘리먼트를 회전함 
+            =>일반적인 회전은 보통 z 축을 사용하며, 단위는 deg */
+
+            transform: skewY(-45deg);
+            /* =>엘리먼트를 기울림 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+        This is Big Event
+    </div>
+
+</body>
+</html>
