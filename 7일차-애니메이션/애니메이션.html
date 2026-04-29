@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+            animation-name: box_ani;
+            /* =>애니메이션 이름  */
+
+            animation-duration: 1s;
+            /* =>애니메이션 움직이는 속도 */
+
+            /* animation-direction: normal; */
+            animation-direction: alternate;
+            /* =>애니메이션 방향으로 일반적으론 alternate가 자연스러운 움직임이라
+            alternate를 많이 사용함 */
+
+            animation-iteration-count: infinite;
+            /* =>애니메이션 반복 횟수, 숫자로 지정 가능하며 
+            infinite를 적게되면 무한 반복함 */
+
+            animation-timing-function: ease-in-out;
+            /* =>애니메이션 가속도 */
+
+            /* animation-delay: 2s; */
+            /* =>애니메이션 딜레이  */
+
+            animation-fill-mode: forwards;
+            /* =>애니메이션 움직임 중 마지막 위치에서 멈춤 */
+
+        }
+
+        @keyframes box_ani {
+            from{
+                transform: translate(0,0);
+            }
+            50%{
+                background-color: gold;
+            }
+            to{
+                transform: translate(300px, 300px);
+            }
+        }
+        
+    
+    </style>
+
+</head>
+<body>
+    
+    <!-- *애니메이션
+    =>특정 이벤트 처리없이 지정한 코드에 맞춰 엘리먼트가 움직임  -->
+
+    <div class="box"></div>
+
+
+</body>
+</html>
