@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 300vh;
+        }
+
+        video{
+            width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>비디오 태그</h2>
+    <video src="video/bg_video.mp4"></video>
+
+    <h2>source 태그 사용</h2>
+    <video>
+        <source src="video/bg_video.mp4" type="video/mp4">
+    </video>
+
+    <h2>컨트롤</h2>
+    <video src="video/bg_video.mp4" controls></video>
+
+    <h2>자동재생</h2>
+    <video src="video/bg_video.mp4" controls autoplay></video>
+
+    <h2>음소거</h2>
+    <video src="video/bg_video.mp4" controls autoplay muted></video>
+
+    <h2>반복</h2>
+    <video src="video/bg_video.mp4" autoplay muted loop></video>
+    
+</body>
+</html>
