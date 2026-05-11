@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            padding: 150px 0;        
+        }
+
+        h3{
+            font-size: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .con_wrap{
+            width: 1400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 30px;
+            margin: 0 auto;
+        }
+
+        .con{
+            width: 32%;
+            height: 500px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 1024px) {
+            
+            .con_wrap{
+                width: 768px;
+            }
+
+        }
+
+        @media screen and (max-width: 767px) {
+            .con_wrap{
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .con{
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section>
+
+        <h3>Section title</h3>
+
+        <div class="con_wrap">
+            <div class="con">Contents 1</div>
+            <div class="con">Contents 2</div>
+            <div class="con">Contents 3</div>
+        </div>
+
+    </section>
+
+</body>
+</html>

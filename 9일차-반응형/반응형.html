@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .el{
+            width: 1200px;
+            height: 300px;
+            background-color: lightgray;
+            font-size: 30px;
+        }
+
+        @media screen and (max-width:1200px) {
+            
+            .el{
+                width: 800px;
+                height: 400px;
+            }
+
+        }
+
+        @media screen and (max-width: 800px) {
+            
+            .el{
+                width: 500px;
+                height: 600px;
+                background-color: lightblue;
+            }
+
+        }
+
+        @media screen and (max-width: 500px) {
+            
+            .el{
+                width: 90%;
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="el">
+         엘리먼트
+    </div>
+
+
+</body>
+</html>

@@ -125,6 +125,7 @@ header a{
     height: 450px;
     background-color: #fff1d4;
     position: relative;
+    overflow: hidden;
 }
 
 .con_2 a{
@@ -154,6 +155,11 @@ header a{
     justify-content: center;
     align-items: center;
     padding: 50px;
+    transition: 0.2s;
+}
+
+.con_2:hover .red_box{
+    top: 0;
 }
 
 .circle{
@@ -184,4 +190,70 @@ header a{
 .con_2:hover img{
     transform: scale(0.9);
     transition: 0.2s;
+}
+/* section_2 end */
+
+
+.section_3{
+    background-color: #fbf9f3;
+    overflow: hidden;
+}
+
+.container_3{
+    margin-top: 100px;
+    position: relative;
+    height: 550px;
+}
+
+.con_wrap_3{
+    width: 2800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    animation: con_ani 10s infinite alternate linear;
+    position: absolute;
+    left: 0;
+}
+
+.con_wrap_3:nth-child(1){
+    top: 0;
+}
+
+.con_wrap_3:nth-child(2){
+    animation-name: con_ani_2;
+    bottom: 0;
+}
+
+@keyframes con_ani {
+    0%{
+        left: 0;
+    }
+
+    100%{
+        left: -50%;
+    }
+}
+
+@keyframes con_ani_2 {
+    0%{
+        left: -50%;
+    }
+
+    100%{
+        left: 0;
+    }
+}
+
+.con_wrap_3:hover{
+    animation-play-state: paused;
+    /* =>애니메이션을 멈추거나 재생을 제어함  */
+}
+
+.con_3{
+    width: 12%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    /* box-shadow: x y 분산 흐림 컬러; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

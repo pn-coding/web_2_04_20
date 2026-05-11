@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        header{
+            padding: 20px 250px;
+        }
+
+        header .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .logo{
+            font-size: 28px;
+        }
+
+        .menu_wrap{
+            display: flex;
+        }
+
+        .menu_wrap li{
+            font-size: 18px;
+            margin-left: 100px;
+        }
+
+        .menu_btn{
+            display: none;
+        }
+
+
+        @media screen and (max-width: 1024px) {
+            header{
+                padding: 20px 80px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            header{
+                padding: 20px;
+            }
+
+            .menu_wrap{
+                display: none;
+            }
+
+            .menu_btn{
+                display: block;
+                font-size: 30px;
+            }
+        }
+        /* header end */
+
+        .section_1{
+            padding: 0 250px;
+            height: 800px;
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            font-size: 80px;
+        }
+        
+        @media screen and (max-width: 1024px) {
+            .section_1{
+                padding: 0 80px;
+                font-size: 60px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .section_1{
+                padding: 300px 20px 0 20px;
+                font-size: 50px;
+            }
+        }
+        /* section_1 */
+
+        .section_2{
+            padding: 150px 250px;
+        }
+
+        .section_title_2{
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+
+        .con_wrap{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .con{
+            width: 49%;
+        }
+
+        .bg{
+            height: 400px;
+            background-color: lightgray;
+        }
+
+        .con h3{
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width:1024px) {
+            .section_2{
+                padding: 150px 80px;
+            }
+
+            .section_title_2{
+                font-size: 50px;
+            }
+
+            .con h3{
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .section_2{
+                padding: 150px 20px;
+            }
+
+            .section_title_2{
+                font-size: 38px;
+            }
+
+            .con_wrap{
+                flex-direction: column;
+            }
+
+            .con{
+                width: 100%;
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+
+            .con h3{
+                margin-top: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <header>
+
+            <div class="container">
+
+                <div class="logo">
+                    LOGO
+                </div>
+    
+                <ul class="menu_wrap">
+                    <li>Menu</li>
+                    <li>Menu</li>
+                    <li>Menu</li>
+                    <li>Menu</li>
+                </ul>
+
+                <div class="menu_btn">=</div>
+
+            </div>
+
+        </header>
+
+        <section class="section_1">
+            <h3>Section Title</h3>
+        </section>
+
+        <section class="section_2">
+
+            <h3 class="section_title_2">Section title2</h3>
+
+            <div class="con_wrap">
+
+                <div class="con">
+                    <div class="bg"></div>
+                    <h3>Content title</h3>
+                </div>
+
+                <div class="con">
+                    <div class="bg"></div>
+                    <h3>Content title</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
